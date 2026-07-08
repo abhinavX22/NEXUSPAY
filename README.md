@@ -1,4 +1,4 @@
-# NexusPay — Offline UPI Mesh Demo
+# NexusPay - Offline UPI Mesh Demo
 
 This project provides a Spring Boot backend demonstrating **offline UPI payments transmitted via a Bluetooth-style mesh network**. Imagine you are in an area with zero cellular connectivity, like a basement. You initiate a ₹500 transfer to a friend. Your device encrypts the transaction, broadcasts it to neighboring devices, and the encrypted packet is relayed from phone to phone. Eventually, when *any* device in this chain reaches an area with internet access (e.g., 4G), it automatically uploads the packet to this backend. The backend then decrypts the data, ensures it isn't a duplicate, and settles the payment.
 
